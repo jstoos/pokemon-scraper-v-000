@@ -19,7 +19,8 @@ class Pokemon
     #pokemon_array = []
     #binding.pry
     pokemon_array = (db.execute("SELECT * FROM pokemon WHERE id = #{id_number}"))[0]
-    Pokemon.new(id: id_number, db: db, name: "#{pokemon_array[1]}", type: "#{pokemon_array[2]}", hp: "#{pokemon_array[3]}")
+    Pokemon.new(id: id_number, db: db, name: "#{pokemon_array[1]}", type: "#{pokemon_array[2]}")
+    #, hp: "#{pokemon_array[3]}"
   end
 
   def alter_hp(hp_update, db)
