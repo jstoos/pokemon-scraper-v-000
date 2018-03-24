@@ -26,7 +26,7 @@ class Pokemon
   binding.pry
     self.hp = hp_update
     db.execute("SELECT * FROM pokemon")
-    db.execute("UPDATE pokemon SET hp = '5' WHERE name = 'Pikachu'")
+    db.execute("UPDATE pokemon SET hp = 'hp_update' WHERE name = 'self.name'")
   end
 
 end
