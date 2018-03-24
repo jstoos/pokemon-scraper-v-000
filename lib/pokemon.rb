@@ -25,7 +25,7 @@ class Pokemon
   def alter_hp(hp_update, db)
   #binding.pry
     self.hp = hp_update
-    db.execute("UPDATE pokemon SET hp = 5")
+    db.execute("UPDATE pokemon SET hp = 5 WHERE hp = 60")
   end
 
 end
